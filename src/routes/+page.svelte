@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Navbar from "$lib/nav.svelte";
+    import Welcome from "$lib/welcome.svelte";
+    import Slider from "$lib/slider.svelte";
+</script>
+
+<Navbar/>
+<div style="padding: 0px 128px;">
+    <Welcome user="ADMIN"/>
+    <Slider/>
+</div>
